@@ -21,7 +21,4 @@ media/
 # Mac
 .DS_Store
 
-# Django database
-*.sqlite3
-
 # Already added manage.py (optional, usually not ignored)
