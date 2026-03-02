@@ -1,0 +1,36 @@
+{%extends 'base.html'%}
+{%block content%}
+<center>
+    <table border="2" width="75%" style="margin:20px; border-radius:10px; box-shadow:0 15px 25px rgba(0,0,0,0.2);">
+        <thead>
+        <th>Student Name</th>
+        <th>Maths</th>
+        <th>Physics</th>
+        <th>Biology</th>
+        <th>Social</th>
+        <th>English</th>
+        <th>Total Marks</th>
+        </thead>
+        <tbody>
+        {%for stud in student%}
+        <tr>
+            <td>{{stud.sname}}</td>
+            <td>{{stud.maths}}</td>
+            <td>{{stud.physics}}</td>
+            <td>{{stud.biology}}</td>
+            <td>{{stud.social}}</td>
+            <td>{{stud.english}}</td>
+            <td>{{stud.total}}</td>
+            <td>
+                <a href="/update/{{stud.id}}" style="text-decoration:none;color:black">Edit</a>
+            </td>
+            <td>
+                <a href="/delete/{{stud.id}}" style="text-decoration:none;color:black;">Delete</a>
+            </td>
+        </tr>
+        {%endfor%}
+        </tbody>
+    </table>
+</center>
+{%endblock%}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+        margin:0;
+        padding:0;
+        background-color:lightblue;
+        }
+        div{
+        margin:20px;
+        background-color:blue;
+        border-radius:15px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        }
+
+        .but{
+        text-decoration:none;
+        color:white;
+        padding:25px;
+        }
+
+        .but:hover{
+        cursor:pointer;
+        background-color:white;
+        color:black;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div>
+        <a class="but" href="{% url 'add'%}">Add Results</a>
+        <a class="but" href="{% url 'view'%}">View Results</a>
+        <a class="but" href="{% url 'create'%}">Create Results</a>
+    </div>
+</nav>
+{%block content%}
+{%endblock%}
+</body>
+</html>
