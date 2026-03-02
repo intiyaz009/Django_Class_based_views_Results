@@ -1,7 +1,7 @@
 # Python
 __pycache__/
 *.py[cod]
-*.dbsqlite3
+*.sqlite3
 
 # Virtual Environment
 venv/
@@ -20,3 +20,8 @@ media/
 
 # Mac
 .DS_Store
+
+# Django database
+*.sqlite3
+
+# Already added manage.py (optional, usually not ignored)
